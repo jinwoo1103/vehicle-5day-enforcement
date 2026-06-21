@@ -1,7 +1,9 @@
 # 🚗 차량 5부제 자동 단속 시스템
 
-딥러닝 기반 3단계 파이프라인(YOLOv8 → ResNet18 → EasyOCR)을 활용하여 
-CCTV 이미지에서 차량 5부제 위반 여부를 자동으로 판별하는 시스템입니다.
+YOLOv8, ResNet18, EasyOCR을 활용한 차량 5부제 자동 단속 시스템입니다.
+
+- **모드 1 (CCTV 이미지 분석)** — YOLOv8이 차량과 번호판 위치를 탐지하고 crop 이미지를 반환합니다.
+- **모드 2 (번호판 직접 입력)** — ResNet18로 친환경 여부를 분류하고 EasyOCR로 끝자리를 추출하여 5부제 위반 여부를 판정합니다.
 
 ## 📌 데모
 🔗 https://jinwoooh30-vehicle-5day-enforcement-system.hf.space
